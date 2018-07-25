@@ -1,10 +1,14 @@
 # vue-presentation
 
-> A Vue.js project
+> A simple Vue.js project.
+
+## Demo
+
+Live demo: http://sam-pop.com/vue-presentation/#/
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
