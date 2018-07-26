@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h1>Job search history</h1>
-    <form @submit.prevent="addPosting" class="text-center offset-2">
+    <form @submit.prevent class="text-center offset-2">
         <div class="input-group center">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="">Posting</span>
@@ -10,6 +10,7 @@
                 <input type="text" class="form-control" placeholder="Posting URL" v-model="newURL">
             </div>
         </div>
+        <button v-on:click='addPosting'>Add!</button>
     </form>
         <div class="row">
             <div v-for="(data, i) in jobs" :key="i" v-bind:class="{isChecked : data.noGo}">
@@ -40,7 +41,17 @@ export default {
             newPosition: '',
             newURL: ''
         }
-    }    
+    },
+    methods: {
+        addPosting() {
+            if (this.newURL.includes('http') || !this.newURL)
+                this.jobs.push({name: this.newName, position: this.newPosition, url: this.newURL, noGo: false});
+            else 
+                this.jobs.push({name: this.newName, position: this.newPosition, url: 'http://'+(this.newURL), noGo: false});
+            
+            this.newName = '', this.newPosition= '', this.newURL = ''; 
+        }
+    }
 }
 </script>
 
