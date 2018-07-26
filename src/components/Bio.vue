@@ -18,4 +18,7 @@ p {
   text-align: center;
   text-justify: newspaper;
 }
+div {
+  padding-bottom: 20px;
+}
 </style>
