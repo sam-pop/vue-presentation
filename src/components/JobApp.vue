@@ -1,6 +1,16 @@
 <template>
     <div class="container">
         <h1>Job search history</h1>
+    <form @submit.prevent="addPosting" class="text-center offset-2">
+        <div class="input-group center">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">Posting</span>
+                <input type="text" class="form-control" placeholder="Company name" v-model="newName">
+                <input type="text" class="form-control" placeholder="Position" v-model="newPosition">
+                <input type="text" class="form-control" placeholder="Posting URL" v-model="newURL">
+            </div>
+        </div>
+    </form>
         <div class="row">
             <div v-for="(data, i) in jobs" :key="i" v-bind:class="{isChecked : data.noGo}">
                 <div class="col">
@@ -25,7 +35,10 @@ export default {
             jobs: [
                 {'name': 'Facebook', 'position':'Vue Developer', 'url' : 'http://www.google.com', 'noGo' : false},
                 {'name': 'Google', 'position':'React Developer', 'url' : '', 'noGo' : false}
-            ]
+            ],
+            newName: '',
+            newPosition: '',
+            newURL: ''
         }
     }    
 }
@@ -39,5 +52,9 @@ export default {
 
 div {
   padding: 20px;
+}
+
+.center {
+  margin: 0 auto;
 }
 </style>
