@@ -1,8 +1,8 @@
 <template>
-    <div class="container">
+    <div class="container add-space">
         <h1>Job search history</h1>
     <form @submit.prevent>
-        <div class="input-group">
+        <div class="input-group add-space">
             <div class="input-group-prepend center">
                 <span class="input-group-text" id="">Posting</span>
                 <input type="text" class="form-control" placeholder="Company name" v-model="newName">
@@ -14,7 +14,7 @@
     </form>
         <div class="row">
             <div v-for="(data, i) in jobs" :key="i" v-bind:class="{isChecked : data.noGo}">
-                <div class="col">
+                <div class="col add-space">
                     <input type="checkbox" class="toggle" v-model="data.noGo"><br/> 
                     <span style='font-size:2em;'>{{data.name}}</span>
                         <br/>
@@ -61,7 +61,7 @@ export default {
   color: rgba(156, 156, 156, 0.671);
 }
 
-div {
+.add-space {
   padding: 20px;
 }
 
