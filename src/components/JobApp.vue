@@ -1,6 +1,6 @@
 <template>
     <div class="container add-space">
-        <h1>Job search history</h1>
+        <h1>Applied positions history</h1>
     <form @submit.prevent>
         <div class="input-group add-space">
             <div class="input-group-prepend center">
