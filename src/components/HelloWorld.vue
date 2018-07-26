@@ -2,7 +2,6 @@
   <div class="hello">
     <router-link to="/test"><img src="@/assets/logo.png"></router-link>
     <h1>{{ msg }}</h1>
-
   </div>
 </template>
 
