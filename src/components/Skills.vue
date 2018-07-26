@@ -6,7 +6,7 @@
     </form>
     <div class="row">
         <!-- <div class="offset-3 text-left"> -->
-            <div v-for="(data, i) in mySkills" :key="i" class="col-2" >
+            <div v-for="(data, i) in mySkills" :key="i" class="col-2 animated bounceIn" >
                 <button v-bind:id='i' @click="removeSkill(i)" class="btn btn-sm btn-dark">x</button>
                 {{data.name}}
             </div>
