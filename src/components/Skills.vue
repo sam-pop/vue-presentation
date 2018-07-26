@@ -1,12 +1,16 @@
 <template>
 <div class="skills">
-    <h1>skills</h1>
+    <h2>Skills:</h2>
     <form @submit.prevent="addSkill">
         <input type="text" placeholder="Add a skill..." v-model="skill"><br/>
     </form>
-    <ul>
-        <li v-for="(data, i) in mySkills" :key="i">{{data.name}} <button v-bind:id='i' @click="removeSkill(i)">X</button></li>
-    </ul>
+    <div class="row">
+        <!-- <div class="offset-3 text-left"> -->
+            <div v-for="(data, i) in mySkills" :key="i" class="col-2" >
+                <button v-bind:id='i' @click="removeSkill(i)" class="btn btn-sm btn-dark">x</button>
+                {{data.name}}
+            </div>
+    </div>
 </div>
 </template>
 
@@ -32,3 +36,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+div {
+  padding: 20px 0 20px 0;
+}
+</style>
+

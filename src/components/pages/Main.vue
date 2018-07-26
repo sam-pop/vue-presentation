@@ -1,9 +1,11 @@
 <template>
-<div class="main">
+<div class="container animated slideInUp">
     <img class='circleImg' src="@/assets/profile_pic.jpg">
     <h1>{{ name }}</h1>
     <Bio />
+    <hr />
     <skills/>
+    <hr />
     <JobApp />
 </div>
 </template>
@@ -28,10 +30,19 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: azure;
+}
+
+hr {
+  width: 50%;
+}
+
 .circleImg {
   width: 15%;
   border-radius: 100%;
   border: 1px solid gray;
   box-shadow: 0px 3px 6px lightgray;
+  margin-bottom: 20px;
 }
 </style>

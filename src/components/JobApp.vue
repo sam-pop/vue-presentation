@@ -36,4 +36,8 @@ export default {
   text-decoration-line: line-through;
   color: red;
 }
+
+div {
+  padding: 20px 0 20px 0;
+}
 </style>
