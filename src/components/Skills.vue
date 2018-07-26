@@ -1,7 +1,7 @@
 <template>
 <div class="skills">
-    <h2>Skills:</h2>
-    <form @submit.prevent="addSkill">
+    <h2>Skills</h2>
+    <form @submit.prevent="addSkill" class="input-group-text col-4">
         <input type="text" placeholder="Add a skill..." v-model="skill"><br/>
     </form>
     <div class="row">
@@ -40,6 +40,16 @@ export default {
 <style scoped>
 div {
   padding: 20px 0 20px 0;
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+form {
+  margin: 0 auto;
+}
+input {
+  width: 100%;
 }
 </style>
 

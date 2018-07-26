@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1>jobApp</h1>
+        <h1>Job search history</h1>
         <div class="row">
             <div v-for="(data, i) in jobs" :key="i" v-bind:class="{isChecked : data.noGo}">
                 <div class="col">
@@ -38,6 +38,6 @@ export default {
 }
 
 div {
-  padding: 20px 0 20px 0;
+  padding: 20px;
 }
 </style>
