@@ -1,16 +1,16 @@
 <template>
     <div class="container">
         <h1>Job search history</h1>
-    <form @submit.prevent class="text-center offset-2">
-        <div class="input-group center">
-            <div class="input-group-prepend">
+    <form @submit.prevent>
+        <div class="input-group">
+            <div class="input-group-prepend center">
                 <span class="input-group-text" id="">Posting</span>
                 <input type="text" class="form-control" placeholder="Company name" v-model="newName">
                 <input type="text" class="form-control" placeholder="Position" v-model="newPosition">
                 <input type="text" class="form-control" placeholder="Posting URL" v-model="newURL">
+                <button v-on:click='addPosting' class="btn btn-success">Add!</button>
             </div>
         </div>
-        <button v-on:click='addPosting'>Add!</button>
     </form>
         <div class="row">
             <div v-for="(data, i) in jobs" :key="i" v-bind:class="{isChecked : data.noGo}">
@@ -58,7 +58,7 @@ export default {
 <style scoped>
 .isChecked {
   text-decoration-line: line-through;
-  color: red;
+  color: rgba(156, 156, 156, 0.671);
 }
 
 div {
