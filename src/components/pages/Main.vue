@@ -7,6 +7,7 @@
     <hr />
     <JobApp />
     <hr />
+    <!-- router link (auto-generates the appropriate <a> tag) -->
     <router-link to='/about'>
       Click here for more info
     </router-link>
@@ -14,10 +15,10 @@
 </template>
 
 <script>
-import Header from '@/components/Header'
-import Bio from '@/components/Bio'
-import Skills from '@/components/Skills'
-import JobApp from '@/components/JobApp'
+  import Header from '@/components/Header'
+  import Bio from '@/components/Bio'
+  import Skills from '@/components/Skills'
+  import JobApp from '@/components/JobApp'
 
 export default {
   components: {

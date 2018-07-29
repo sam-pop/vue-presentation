@@ -1,22 +1,23 @@
+<!-- Page template -->
 <template>
-  <div id="app">
     <router-view/>
-  </div>
 </template>
 
+<!-- Script -->
 <script>
 export default {
   name: 'App'
 }
 </script>
 
+<!-- custom CSS styling -->
 <style>
-#app {
+body {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 </style>

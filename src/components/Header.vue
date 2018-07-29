@@ -15,6 +15,7 @@ export default {
 }
 </script>
 
+<!-- "scoped" attribute limit CSS to this component only -->
 <style scoped>
 .circleImg {
   width: 15%;
