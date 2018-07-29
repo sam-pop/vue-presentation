@@ -1,9 +1,13 @@
 <template>
-<div class="container animated slideInUp">
-    <Header />
+<div class="container animated zoomIn">
+  <!-- for demo only -->
+    <Bio />
+    <Bio />
     <Bio />
     <hr />
-
+    <router-link to='/'>
+    Back to home
+    </router-link>
 </div>
 </template>
 

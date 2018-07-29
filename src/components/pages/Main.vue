@@ -1,12 +1,16 @@
 <template>
-<div class="container animated slideInUp">
+  <div class="container animated slideInUp">
     <Header />
     <Bio />
     <hr />
     <skills/>
     <hr />
     <JobApp />
-</div>
+    <hr />
+    <router-link to='/about'>
+      Click here for more info
+    </router-link>
+  </div>
 </template>
 
 <script>
@@ -21,10 +25,6 @@ export default {
     Bio,
     Skills,
     JobApp
-  },
-  data () {
-    return {
-    }
   }
 }
 </script>
