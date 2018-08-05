@@ -1,6 +1,6 @@
 # vue-presentation
 
-> A presentation about the core concepts of Vue.js + simple Vue.js project to demonstrate some of the framework's main features.
+> My presentation about the core concepts of Vue.js + simple Vue.js project to demonstrate some of the framework's main features.
 
 ## Slides
 
