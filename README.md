@@ -1,6 +1,10 @@
 # vue-presentation
 
-> A simple Vue.js project.
+> A presentation about the core concepts of Vue.js + simple Vue.js project to demonstrate some of the Vue main features  
+
+## Slides
+
+https://docs.google.com/presentation/d/1p7S42TcZlAa_RXs-iwJ-SdI95PXxJOwSkEUc_5jFVs8
 
 ## Demo
 
@@ -21,5 +25,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
